@@ -31,28 +31,24 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input the third number: ");
 int number3 = Convert.ToInt32(Console.ReadLine());
 
+int max = 0;
 
 if(number1 > number2)
 {
-    if(number1 > number3)
-    {
-        Console.WriteLine("Max number is " + number1);
-    }
-    else
-    {
-       Console.WriteLine("Max number is " + number3); 
-    }
+   max = number1;
 }
 else
 {
-    if(number2 > number3)
-    {
-        Console.WriteLine("Max number is " + number2);
-    }
-    else
-    {
-     Console.WriteLine("Max number is " + number3);   
-    }
+    max = number2;
+}
+
+if(number3 > max)
+{
+    Console.Write("Max number is " + number3);
+}
+else
+{
+    Console.Write("Max number is " + max);
 }
 
 
@@ -70,7 +66,7 @@ else
 {
     Console.Write("The input number is nechetnoye");
 }
-*/
+
 
 //Task 4 Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
@@ -94,4 +90,6 @@ else
 {
     Console.Write("No positive integer numbers between 1 and the input number");
 }
+
+*/
 
